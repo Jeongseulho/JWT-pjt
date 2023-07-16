@@ -13,10 +13,10 @@ import CautionContent from "./../tab/CautionContent";
 const GameDescription = ({ curModalType, showModalHandler }: FormModalProps) => {
   const [curTabType, setCurTabType] = useState<number>(ShowTabType.story);
   const renderTabContent = () => {
-    if (curTabType === ShowTabType.story) return StoryContent();
-    else if (curTabType === ShowTabType.rule) return RuleContent();
-    else if (curTabType === ShowTabType.role) return RoleContent();
-    else if (curTabType === ShowTabType.caution) return CautionContent();
+    if (curTabType === ShowTabType.story) return <StoryContent />;
+    else if (curTabType === ShowTabType.rule) return <RuleContent />;
+    else if (curTabType === ShowTabType.role) return <RoleContent />;
+    else if (curTabType === ShowTabType.caution) return <CautionContent />;
   };
 
   return (

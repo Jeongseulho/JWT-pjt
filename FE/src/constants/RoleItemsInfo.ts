@@ -1,7 +1,4 @@
-import upArrow from "../assets/img/upArrow.png";
-import downArrow from "../assets/img/downArrow.png";
-
-export const RoleItemsInfo = [
+export const firstViewRoleItemsInfo = [
   {
     name: "거북이",
     desc: "매일 밤 한 마리 토끼를 선정하여 공격합니다",
@@ -22,6 +19,8 @@ export const RoleItemsInfo = [
     desc: "매일밤 한 토끼를 선택하여 살릴 수 있습니다",
     imgPath: "",
   },
+];
+export const secondViewRoleItemsInfo = [
   {
     name: "햄치인",
     desc: "투표에서 2표를 가지고 투표로 처형되지 않습니다",
@@ -38,3 +37,5 @@ export const RoleItemsInfo = [
     imgPath: "",
   },
 ];
+
+export const allRoleItemsInfo = [firstViewRoleItemsInfo, secondViewRoleItemsInfo];
