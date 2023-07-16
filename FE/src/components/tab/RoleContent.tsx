@@ -33,8 +33,18 @@ const RoleContent = () => {
       {
         <>
           {renderViewRoleItems(0)}
-          <img src={downArrow} alt="" className=" cursor-pointer w-[66px] h-[36px] mx-auto mt-6" onClick={slideDown} />
-          <img src={upArrow} alt="" className=" cursor-pointer w-[66px] h-[36px] mx-auto mt-6" onClick={slideUp} />
+          <img
+            src={downArrow}
+            alt=""
+            className=" cursor-pointer w-[66px] h-[36px] mx-auto mt-6 hover:scale-150 transition-all duration-500"
+            onClick={slideDown}
+          />
+          <img
+            src={upArrow}
+            alt=""
+            className=" cursor-pointer w-[66px] h-[36px] mx-auto mt-8 hover:scale-150 transition-all duration-500"
+            onClick={slideUp}
+          />
           {renderViewRoleItems(1)}
         </>
       }
